@@ -1,9 +1,6 @@
 name: docker deploy
-on:
-  pull_request:
-    branches: [ main ]
-  push:
-    branches: [ main ]
+on: push
+
 
 jobs:
   docker:

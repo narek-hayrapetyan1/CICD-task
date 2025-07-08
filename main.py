@@ -7,7 +7,7 @@ app = FastAPI()
 mock_products = [
     {"id": 1, "name": "Laptop", "price": 1200},
     {"id": 2, "name": "Mouse", "price": 25},
-    {"id": 3, "name": "Keyboard", "price": 75}
+    {"id": 3, "name": "Keyboard", "price": 80}
 ]
 
 @app.get("/products", response_model=List[dict])
