@@ -40,4 +40,5 @@ jobs:
           host: ${{ secrets.TRAIN_SERVER_IP }}
           username: ${{ secrets.TRAIN_SERVER_USER }}
           key: ${{ secrets.TRAIN_SERVER_SSH_KEY }}
-          run: docker pull ghcr.io/narek-hayrapetyan1/backend:latest
+          script: |
+            docker pull ghcr.io/narek-hayrapetyan1/backend:latest
